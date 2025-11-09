@@ -1,0 +1,104 @@
+.ai-panel {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ai-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ai-icon {
+  color: #764ba2;
+}
+
+.ai-panel h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.ai-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+}
+
+.ai-provider-select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ai-provider-select label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.ai-provider-select select {
+  padding: 0.75rem;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.ai-provider-select select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.ai-provider-select select:disabled {
+  background-color: var(--bg-light);
+  cursor: not-allowed;
+}
+
+.ai-suggestion {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: 6px;
+  border-left: 4px solid #764ba2;
+}
+
+.ai-suggestion h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.suggestion-content {
+  margin-bottom: 1rem;
+}
+
+.suggestion-content pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.ai-note {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #fef3c7;
+  border-radius: 6px;
+  border-left: 3px solid var(--warning-color);
+}
+
+.ai-note small {
+  font-size: 0.8rem;
+  color: #92400e;
+  line-height: 1.4;
+}

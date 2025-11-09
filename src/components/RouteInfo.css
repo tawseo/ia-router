@@ -1,0 +1,120 @@
+.route-info {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.route-info h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.route-info h4 {
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.route-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: 6px;
+}
+
+.stat-icon {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.route-order-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.route-order-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--bg-light);
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.order-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.order-address {
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.order-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.order-badge.status-1st {
+  background-color: #dbeafe;
+  color: var(--primary-color);
+}
+
+.order-badge.status-last {
+  background-color: #fee2e2;
+  color: var(--danger-color);
+}
+
+.order-badge.status-am {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.order-badge.status-pm {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}

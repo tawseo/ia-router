@@ -1,0 +1,82 @@
+.route-map {
+  position: relative;
+  height: 500px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.map-overlay p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.marker-popup {
+  font-family: inherit;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.popup-header strong {
+  font-size: 0.95rem;
+}
+
+.popup-address {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.popup-status {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.badge {
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.badge-first {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.badge-last {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 1rem;
+}

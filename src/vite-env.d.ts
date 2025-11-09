@@ -1,0 +1,13 @@
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_OPENAI_API_KEY: string
+  readonly VITE_GEMINI_API_KEY: string
+  readonly VITE_DEEPSEEK_API_KEY: string
+  readonly VITE_QWEN_API_KEY: string
+  readonly VITE_GEOCODING_API_KEY: string
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}
